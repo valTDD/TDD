@@ -268,4 +268,15 @@ public class TestConvert {
 		
 	}
 	
+	@Test
+	public void test_num2text_vingt_et_un () {
+
+		Convert myConvert = new Convert();
+
+		Assert.assertEquals("vingt_et_un", myConvert.num2text("21"));
+		
+	}
+
+	
+	
 }
