@@ -203,14 +203,68 @@ public class TestConvert {
 	}
 	@Test
 	public void test_num2text_seize () {
-		// Given
-		String input = "16";
-		String expected = "seize";
+
 		Convert myConvert = new Convert();
-		// When
-		String actual = myConvert.num2text(input);
-		// Then
-		Assert.assertEquals(expected, actual);
+
+		Assert.assertEquals("seize", myConvert.num2text("16"));
+		
+	}
+	
+
+	@Test
+	public void test_num2text_quatre_vingt_dix () {
+
+		Convert myConvert = new Convert();
+
+		Assert.assertEquals("quatre_vingt_dix", myConvert.num2text("90"));
+		
+	}
+	@Test
+	public void test_num2text_quatre_vingt () {
+
+		Convert myConvert = new Convert();
+
+		Assert.assertEquals("quatre_vingt", myConvert.num2text("80"));
+		
+	}
+	@Test
+	public void test_num2text_vingt () {
+
+		Convert myConvert = new Convert();
+
+		Assert.assertEquals("vingt", myConvert.num2text("20"));
+		
+	}
+	@Test
+	public void test_num2text_trente () {
+
+		Convert myConvert = new Convert();
+
+		Assert.assertEquals("trente", myConvert.num2text("30"));
+		
+	}
+	@Test
+	public void test_num2text_quarente () {
+
+		Convert myConvert = new Convert();
+
+		Assert.assertEquals("quarente", myConvert.num2text("40"));
+		
+	}
+	@Test
+	public void test_num2text_cinquante () {
+
+		Convert myConvert = new Convert();
+
+		Assert.assertEquals("cinquante", myConvert.num2text("50"));
+		
+	}
+	@Test
+	public void test_num2text_soixante () {
+
+		Convert myConvert = new Convert();
+
+		Assert.assertEquals("soixante", myConvert.num2text("60"));
 		
 	}
 	

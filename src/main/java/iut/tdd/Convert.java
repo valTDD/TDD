@@ -23,6 +23,17 @@ public class Convert {
 	private static final String QUINZE = "quinze";
 	private static final String SEIZE = "seize";
 	
+	private static final String VINGT = "vingt";
+	private static final String TRENTE = "trente";
+	private static final String QUARENTE = "quarente";
+	private static final String CINQUANTE = "cinquante";
+	private static final String SOIXANTE = "soixante";
+	private static final String SOIXANTE_DIX = "soixante_dix";
+	private static final String QUATRE_VINGT = "quatre_vingt";
+	private static final String QUATRE_VINGT_DIX = "squatre_vingt_dix";
+	
+	private static final String CENT = "cent";
+	
 	
 	
 	public static String num2text(String input) {
@@ -45,6 +56,15 @@ public class Convert {
 		map.put("14", QUATORZE);
 		map.put("15", QUINZE);
 		map.put("16", SEIZE);
+		
+		map.put("20", VINGT);
+		map.put("30", TRENTE);
+		map.put("40", QUARENTE);
+		map.put("50", CINQUANTE);
+		map.put("60", SOIXANTE);
+		map.put("70", SOIXANTE_DIX);
+		map.put("80", QUATRE_VINGT);
+		map.put("90", QUATRE_VINGT_DIX);
 		
 		return map.get(input);
 	}
